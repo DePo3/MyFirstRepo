@@ -1,7 +1,11 @@
-print("The world is beautiful! Enjoy the sound!")
-passwort = 12345
-print(passwort)
-song = input("What is your favourite song?")
-name = input("What is your name?")
+def sound (volume): 
+	if volume < 20:
+		print("It is quiet.")
+	elif volume < 30:
+		print("It is a good background.")
+	else: 
+		print("It is too loud.")
 
-print("Your name is %s and your favourite song is %s" % (name, song))	
+sound(18)
+sound(22)
+sound(27)
